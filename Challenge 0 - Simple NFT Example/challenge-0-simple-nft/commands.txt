@@ -1,0 +1,33 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\Challenge 0 - Simple NFT Example\challenge-0-simple-nft
+
+Terminal #1
+git checkout challenge-0-simple-nft
+yarn install
+yarn chain
+
+Terminal #2
+cd challenge-0-simple-nft
+yarn start
+http://localhost:3000
+
+Terminal #3
+cd challenge-0-simple-nft
+yarn deploy --reset
+yarn deploy --network sepolia --reset
+
+yarn generate
+Account Generated as 0x8c89279747b350757761adf9b2aa8b697cad49a7
+
+deployed at 0x59e96Fc966c2699645Ebef5121D7Dc2b483AB5e4
+
+yarn build
+
+yarn surge
+
+Success! - Published to chunky-smell.surge.sh
+
+yarn test
+
+yarn verify --network sepolia
+
+already verified: YourCollectible (0x59e96Fc966c2699645Ebef5121D7Dc2b483AB5e4), skipping.
