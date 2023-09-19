@@ -1,0 +1,37 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 2 - Token Vendor\challenge-2-token-vendor
+
+git checkout challenge-2-token-vendor
+yarn 
+
+
+yarn chain
+yarn start
+yarn deploy --reset
+
+
+Vendor Buyback process
+
+1. User calls approve of the ERC-20 token to trade. Approve the vendor to take my ERC-20 tokens.
+2. The user makes a transaction over the Vendor contract, called sellTokens(uint256 amount) (custom function)
+3. The vendor contract inside of that function calls yourToken.transferFrom(msg.sender, address(this), theAmount)
+
+
+yarn test
+
+yarn generate
+
+Account Generated as 0xa191de6f96b7beecba2fa6f107c466c6c070e4d8
+
+yarn account
+
+yarn deploy
+
+https://sepolia.etherscan.io/address/0xf8603249B81F1D0BEA03ABB57fB0F1148279B275#code
+
+yarn build
+
+yarn surge
+
+https://far-truck007.surge.sh
+
+-----CHECKPOINT ToDo-----
