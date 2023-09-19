@@ -1,0 +1,44 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 1 - Decentralized Staking App\challenge-1-decentralized-staking
+
+git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git challenge-1-decentralized-staking
+
+cd challenge-1-decentralized-staking
+
+git checkout challenge-1-decentralized-staking
+
+yarn install
+
+
+
+yarn start
+
+yarn chain
+
+yarn deploy --reset
+
+yarn test
+
+
+yarn generate
+
+Account Generated as 0x83cc89e62e7b6edc7d7288d8c77fe24a61eb994e and set as mnemonic in packages/hardhat
+
+yarn account
+
+
+yarn deploy
+
+https://sepolia.etherscan.io/address/0x369c2eb5da42e4d12a9bb908f7d68aa59970e965
+
+
+yarn verify --network sepolia
+
+https://sepolia.etherscan.io/address/0x369c2eb5da42e4d12a9bb908f7d68aa59970e965#code
+
+
+yarn build
+
+yarn surge
+
+https://hollow-page703.surge.sh/
+
