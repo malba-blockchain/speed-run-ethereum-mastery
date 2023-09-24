@@ -1,0 +1,55 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 3 - Dice Game
+
+git clone https://github.com/scaffold-eth/se-2-challenges.git challenge-3-dice-game
+cd challenge-3-dice-game
+git checkout challenge-3-dice-game
+yarn install
+
+yarn chain
+yarn start
+yarn deploy --reset
+
+yarn test 
+
+yarn generate
+Generated wallet address: 0x4Da6bBE1F7c39b947fc8a7be79133d2Ab401B39e
+
+yarn account
+
+yarn deploy --network sepolia
+
+deploying "DiceGame" (tx: 0xdd4947ff8fd69dd604240a34632beb726b63f27ace6eb5d3909482930b7bccfd)...: deployed at 0x89b97aed2c31F05Dbe5735e02C5901B145388994 with 594284 gas
+Deployed Dice Game Contract Address 0x89b97aed2c31F05Dbe5735e02C5901B145388994
+Deployed Dice Game Contract Balance 0.05
+deploying "RiggedRoll" (tx: 0xe41a67651e3b80845fbe0340ecd3c3b9cf67b6d610aff779341c43605827102c)...: deployed at 0x823134FF6e0948F6aF90Ca626835D0ee9a715390 with 776346 gas
+
+
+
+yarn verify --network sepolia
+
+Verified Dice Game: https://sepolia.etherscan.io/address/0x89b97aed2c31F05Dbe5735e02C5901B145388994#code
+Verified Rigged Roll: https://sepolia.etherscan.io/address/0x823134FF6e0948F6aF90Ca626835D0ee9a715390#code
+
+yarn vercel
+
+https://challenge3-dicegame.vercel.app
+
+-------------CHECKPOINT TODO-------------
+
+Identify the reason of this error MODIFY RIGGEDROLL.SOL:
+
+
+  5 passing (2s)
+  1 failing
+
+  1) 🚩 Challenge 3: 🎲 Dice Game
+       🔑 Rigged Rolls
+         Should call diceGame.rollTheDice for a roll <= 2:
+     Uncaught RuntimeError: abort(Error: VM Exception while processing transaction: reverted with reason string 'The dice was not rolled'). Build with -s ASSERTIONS=1 for more info.
+      at process.abort (node_modules/@ethereum-waffle/compiler/node_modules/solc/soljson.js:1:13938)
+      at process.emit (node:events:513:28)
+      at process.emit (node_modules/source-map-support/source-map-support.js:495:21)
+      at emit (node:internal/process/promises:149:20)
+      at processPromiseRejections (node:internal/process/promises:283:27)
+      at processTicksAndRejections (node:internal/process/task_queues:96:32)
+
