@@ -1,0 +1,35 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 5 - A State Channel Application
+
+yarn install
+
+
+yarn chain
+
+yarn start
+
+yarn deploy --reset
+
+
+
+yarn test
+
+yarn generate
+
+Generated wallet address: 0x7268D6c2fc742eB858d5373f351e3EABc28DE66e
+
+yarn account
+
+yarn deploy --network sepolia
+
+0x9E78A356bD5E0625849dD02C53A0da1b9E155A9A
+
+yarn verify --network sepolia
+
+https://sepolia.etherscan.io/address/0x9E78A356bD5E0625849dD02C53A0da1b9E155A9A#code
+
+yarn vercel
+
+https://challenge5-state-channel-application.vercel.app
+
+
+CHECKPOINT
