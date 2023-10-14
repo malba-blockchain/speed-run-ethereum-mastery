@@ -1,0 +1,38 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 6 - Multisig Wallet
+
+https://github.com/scaffold-eth/scaffold-eth-2
+yarn install
+
+
+yarn chain
+
+yarn deploy --reset
+
+yarn deploy --reset --constructor-args scripts/arguments.js
+
+yarn start
+
+http://localhost:3000
+
+
+Edit your app config in packages/nextjs/scaffold.config.ts
+Edit your smart contract YourContract.sol in packages/hardhat/contracts
+Edit your frontend in packages/nextjs/pages
+Edit your deployment scripts in packages/hardhat/deploy
+
+
+yarn test
+
+yarn generate
+
+🪄 Generated wallet address: 0xB501d9c2EA1538b5bdf512a0f95A9665a09a3df5
+
+yarn account
+
+yarn deploy --network sepolia
+
+deployed at 0xf9e66aaf696c69D37848C5674e7184793dC568e2
+
+yarn verify --network sepolia
+
+https://sepolia.etherscan.io/address/0xf9e66aaf696c69D37848C5674e7184793dC568e2#code
