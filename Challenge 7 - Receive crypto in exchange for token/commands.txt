@@ -1,0 +1,114 @@
+cd D:\USER\Downloads\0xCOURSES\Speedrun Ethereum\speed-run-ethereum-mastery\Challenge 7 - Receive crypto in exchange for token
+
+https://github.com/scaffold-eth/scaffold-eth-2
+yarn install
+
+npm install @chainlink/contracts
+
+yarn add --dev @nomicfoundation/hardhat-network-helpers
+
+
+
+yarn chain
+
+yarn start
+
+yarn deploy --reset
+
+yarn deploy --reset --show-stack-traces
+
+yarn deploy --reset --network polygonMumbai --show-stack-traces
+
+
+http://localhost:3000
+
+
+Edit your app config in packages/nextjs/scaffold.config.ts
+Edit your frontend in packages/nextjs/pages
+Edit your smart contract YourContract.sol in packages/hardhat/contracts
+
+Edit your deployment scripts in packages/hardhat/deploy
+
+
+yarn test
+
+yarn generate
+
+Generated wallet address: 0x9bB556ED55dC8FDd92b850633896D8997A4f5C0a
+
+yarn account
+
+yarn deploy --network polygonMumbai
+
+yarn verify --network polygonMumbai
+
+
+-----------DONE----------
+
+1. Create and deploy the 5 ERC-20 tokens to emulate the crypto to be received and send some to your wallet DONE
+-Send some of that token to your wallet
+
+
+2. Create the own ERC-20 W3M token to be bought DONE
+2.1. Change the owner of the ERC20 for the address you can control in the interface
+
+2.2. Can I store the tokens in the smart contract?  Yes, it looks like... For now
+
+https://medium.com/coinmonks/how-to-transfer-tokens-to-the-owner-address-and-not-stuck-in-contract-address-in-solidity-4fdd7f1f7575
+
+
+3. Get the information to ask for the current price of the MATIC using chainlink
+
+https://docs.chain.link/data-feeds/price-feeds/addresses?network=polygon&page=1&search=
+
+https://data.chain.link/polygon/mainnet/crypto-usd/matic-usd
+
+https://polygonscan.com/address/0xab594600376ec9fd91f8e885dadf0ce036862de0#readContract
+
+3.1. It got a hardhat error after I installed the "npm install @chainlink/contracts" DONE
+
+3.2. Add a Delay between the deploy of the different tokens so it doesnt use the same nonce await sleep(1000); DONE
+
+3.3. Deploy the smart contract in the mumbai testnet. Dont forget to send MATIC to the local address to be able to deploy DONE
+
+
+-----------ToDo----------
+
+CHECKPOINT:
+
+4. Create a function that recieves the matic emulation in exchange of the W3M token
+
+-Verify the MATICTOKEN smart contract over the mumbai network https://mumbai.polygonscan.com/address/0x388E8F01fE2c2d1Ae8ce8B8A18e1De03F9e0A8F8#readContract
+
+
+CHECKPOINT
+Deploy again the W3M smart contract and approve the spending of MATIC tokens from polygonscan.
+
+Amount: 1000000000000000000000
+
+Solve the error: "The contract function "investFromMatic" reverted with the following reason:
+ERC20: transfer amount exceeds balance". 
+
+The challenge appears when sending the W3M tokens to the investor
+
+Then: Should I leave the tokens in the smart contract instead of the owner wallet? OR Should I approve the allowance to the smart contract, the owner or the investor?
+
+
+https://stackoverflow.com/questions/71941928/how-to-transfer-erc20-tokens-to-another-address-using-solidity
+
+5. Create a function to receive MATIC natively and other to receive other ERC20 - tokens
+
+6. Add at least 10 tests
+
+7. Launch on sepolia and test if in the wallet it shows decimals. Change the minting funciton in the constructor
+
+
+
+
+
+
+https://ethereum.stackexchange.com/questions/119175/help-with-using-different-erc-20-tokens-with-my-smart-contract-solidity
+
+https://medium.com/@harsha_90164/accept-dai-usdc-or-any-erc20-token-to-a-smart-contract-89b836228144
+
+https://www.youtube.com/watch?v=Xrvtc8YV-KI

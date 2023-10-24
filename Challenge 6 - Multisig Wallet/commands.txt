@@ -36,3 +36,5 @@ deployed at 0xf9e66aaf696c69D37848C5674e7184793dC568e2
 yarn verify --network sepolia
 
 https://sepolia.etherscan.io/address/0xf9e66aaf696c69D37848C5674e7184793dC568e2#code
+
+yarn vercel
