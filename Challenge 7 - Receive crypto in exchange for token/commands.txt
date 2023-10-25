@@ -49,12 +49,14 @@ yarn verify --network polygonMumbai
 -Send some of that token to your wallet
 
 
+
 2. Create the own ERC-20 W3M token to be bought DONE
 2.1. Change the owner of the ERC20 for the address you can control in the interface
 
 2.2. Can I store the tokens in the smart contract?  Yes, it looks like... For now
 
 https://medium.com/coinmonks/how-to-transfer-tokens-to-the-owner-address-and-not-stuck-in-contract-address-in-solidity-4fdd7f1f7575
+
 
 
 3. Get the information to ask for the current price of the MATIC using chainlink
@@ -72,16 +74,11 @@ https://polygonscan.com/address/0xab594600376ec9fd91f8e885dadf0ce036862de0#readC
 3.3. Deploy the smart contract in the mumbai testnet. Dont forget to send MATIC to the local address to be able to deploy DONE
 
 
------------ToDo----------
-
-CHECKPOINT:
 
 4. Create a function that recieves the matic emulation in exchange of the W3M token
 
 -Verify the MATICTOKEN smart contract over the mumbai network https://mumbai.polygonscan.com/address/0x388E8F01fE2c2d1Ae8ce8B8A18e1De03F9e0A8F8#readContract
 
-
-CHECKPOINT
 Deploy again the W3M smart contract and approve the spending of MATIC tokens from polygonscan.
 
 Amount: 1000000000000000000000
@@ -93,14 +90,36 @@ The challenge appears when sending the W3M tokens to the investor
 
 Then: Should I leave the tokens in the smart contract instead of the owner wallet? OR Should I approve the allowance to the smart contract, the owner or the investor?
 
-
 https://stackoverflow.com/questions/71941928/how-to-transfer-erc20-tokens-to-another-address-using-solidity
 
-5. Create a function to receive MATIC natively and other to receive other ERC20 - tokens
 
-6. Add at least 10 tests
 
-7. Launch on sepolia and test if in the wallet it shows decimals. Change the minting funciton in the constructor
+5. Add the USDC token to the environment
+
+-Verify the USDCTOKEN smart contract over the mumbai network 
+
+https://mumbai.polygonscan.com/address/0xAD42272cA8cEF831cC442E744eF2ab6a38BE7295#code
+
+Deploy again the W3M smart contract and approve the spending of USDC tokens from polygonscan.
+
+Amount: 1000000000000000000000
+
+6. Create a function to receive MATIC natively and other to receive other ERC20 - tokens
+
+
+-----------ToDo----------
+
+
+
+CHECKPOINT
+
+7. Update the github
+
+8. Update the company docs
+
+9. Create the new project
+
+7. Add at least 10 tests
 
 
 

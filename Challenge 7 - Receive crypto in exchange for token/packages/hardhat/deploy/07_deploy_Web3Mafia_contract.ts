@@ -61,7 +61,7 @@ const deployWeb3MafiaContract: DeployFunction = async function (hre: HardhatRunt
     //newOwnerAddress, totalSupplyHex.toString() //Line to transfer the W3M tokens from the deployer to the new owner
   );
 
-  await sleep(7000);
+  await sleep(5000);
   
   var newOwnerTokenBalance = await web3Mafia.balanceOf(newOwnerAddress);
 

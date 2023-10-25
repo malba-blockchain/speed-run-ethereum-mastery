@@ -38,9 +38,9 @@ const deployWbtcToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
   const wbtcToken = await hre.ethers.getContract("WbtcToken", deployer);
 
   //paste in your front-end address here to get 10000 Wbtc Token Mockup on deploy:
-  
+  await sleep(5000);
   await wbtcToken.transfer(
-    "0x350441F8a82680a785FFA9d3EfEa60BB4cA417f8", 10000
+    "0x350441F8a82680a785FFA9d3EfEa60BB4cA417f8", hre.ethers.utils.parseUnits("10000", 18)
   );
   
 };

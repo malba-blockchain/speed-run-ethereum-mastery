@@ -7,8 +7,6 @@ import { DeployFunction } from "hardhat-deploy/types";
  *
  * @param hre HardhatRuntimeEnvironment object.
  */
-
-
 const deployMaticToken: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   /*
     On localhost, the deployer account is the one that comes with Hardhat, which is already funded.
@@ -40,7 +38,7 @@ const deployMaticToken: DeployFunction = async function (hre: HardhatRuntimeEnvi
   const maticToken = await hre.ethers.getContract("MaticToken", deployer);
 
   //paste in your front-end address here to get 10000 Matic Token Mockup on deploy:
-  
+  await sleep(5000);
   await maticToken.transfer(
     "0x350441F8a82680a785FFA9d3EfEa60BB4cA417f8", hre.ethers.utils.parseUnits("10000", 18)
   );
